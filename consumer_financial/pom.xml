@@ -7,6 +7,9 @@
     <groupId>com.financial</groupId>
     <artifactId>consumer_financial</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>hello_demo</module>
+    </modules>
 
     <packaging>pom</packaging>
 
@@ -18,12 +21,9 @@
     </parent>
 
     <properties>
-        <mybatisplus.version>3.0.7.1</mybatisplus.version>
-        <nacos.version>0.2.2.RELEASE</nacos.version>
-        <mybatisplus.version>3.0.7.1</mybatisplus.version>
-        <mysql.version>5.1.46</mysql.version>
-        <swagger.version>2.9.2</swagger.version>
-        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
@@ -45,61 +45,9 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>Hoxton.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                <version>${nacos.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-                <version>${nacos.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>${mybatisplus.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.baomidou</groupId>
-                        <artifactId>mybatis-plus-generator</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus</artifactId>
-                <version>${mybatisplus.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
-
-            <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.8</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
