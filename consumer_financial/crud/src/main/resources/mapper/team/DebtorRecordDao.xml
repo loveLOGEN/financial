@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.financial.team.dao.DebtorRecordDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.financial.team.entity.DebtorRecordEntity" id="debtorRecordMap">
+        <result property="tId" column="t_id"/>
+        <result property="tClaimsId" column="t_claims_id"/>
+        <result property="tReceivableDate" column="t_receivable_date"/>
+        <result property="tReceiveableMoney" column="t_receiveable_money"/>
+        <result property="tCurrentTerm" column="t_current_term"/>
+        <result property="tRecordDate" column="t_record_date"/>
+        <result property="tIsreturned" column="t_isreturned"/>
+    </resultMap>
+
+
+</mapper>

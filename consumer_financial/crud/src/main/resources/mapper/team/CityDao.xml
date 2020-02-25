@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.financial.team.dao.CityDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.financial.team.entity.CityEntity" id="cityMap">
+        <result property="tId" column="t_id"/>
+        <result property="tCityAreaNum" column="t_city_area_num"/>
+        <result property="tCityName" column="t_city_name"/>
+        <result property="tCityLevel" column="t_city_level"/>
+        <result property="tParentCityNum" column="t_parent_city_num"/>
+    </resultMap>
+
+
+</mapper>
