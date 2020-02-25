@@ -10,6 +10,7 @@
     <modules>
         <module>hello_demo</module>
         <module>match_management</module>
+        <module>crud</module>
     </modules>
 
     <packaging>pom</packaging>
