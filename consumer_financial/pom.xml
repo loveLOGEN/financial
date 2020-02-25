@@ -10,6 +10,10 @@
     <modules>
         <module>hello_demo</module>
         <module>match_management</module>
+        <module>user_info_managerment</module>
+        <module>invest_management</module>
+        <module>before_assets_management</module>
+        <module>capital_flow_record</module>
     </modules>
 
     <packaging>pom</packaging>
